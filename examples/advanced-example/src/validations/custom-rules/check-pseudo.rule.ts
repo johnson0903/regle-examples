@@ -15,11 +15,10 @@ export const checkPseudo = createRule({
     return true;
   },
   message: 'The pseudo is already taken',
-  tooltip({ $value, $invalid }) {
-    // console.log($value, $invalid);
-    // if (!$value && !$invalid) {
-    //   return `Your pseudo can't be "regle"`;
-    // }
+  tooltip({ $value, $error }) {
+    if (!$error && !$value) {
+      return `Your pseudo can't be "regle"`;
+    }
     return '';
   },
 });

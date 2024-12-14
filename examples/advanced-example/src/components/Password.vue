@@ -15,12 +15,12 @@
       class="password-strength"
       :class="[`level-${field.$rules.strongPassword.$metadata.result?.id}`]"
     ></div>
-    <ul v-if="field.$tooltips.length" class="tooltips">
+    <ul v-if="field.$tooltips.length" class="text-sm mt-1 text-gray-500">
       <li v-for="tooltip of field.$tooltips" :key="tooltip">
         {{ tooltip }}
       </li>
     </ul>
-    <div v-else-if="field.$valid" class="success">Your password is strong enough</div>
+    <div v-else-if="field.$valid" class="text-sm mt-1 text-green-600">Your password is strong enough</div>
   </div>
 </template>
 
@@ -53,7 +53,7 @@ const props = defineProps<{
   width: calc(100% - 15px);
   height: 4px;
   border-radius: 4px;
-  border: 1px solid var(--vp-c-border);
+  border: 1px solid rgb(230, 230, 230);
   position: relative;
 
   &::before {
@@ -63,7 +63,7 @@ const props = defineProps<{
     top: 0;
     width: 0;
     height: 100%;
-    background-color: var(--vp-c-form-error);
+    @apply bg-red-400;
     transition: width 0.2s ease;
   }
 
@@ -75,19 +75,19 @@ const props = defineProps<{
   &.level-1 {
     &::before {
       width: 40%;
-      background-color: var(--vp-c-warning-2);
+      @apply bg-orange-300;
     }
   }
   &.level-2 {
     &::before {
       width: 75%;
-      background-color: var(--vp-c-brand-1);
+      @apply bg-green-400;
     }
   }
   &.level-3 {
     &::before {
       width: 100%;
-      background-color: var(--vp-c-brand-1);
+      @apply bg-green-400;
     }
   }
 }

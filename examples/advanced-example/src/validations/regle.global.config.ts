@@ -11,8 +11,8 @@ export const { useRegle: useCustomRegle } = defineRegleConfig({
     checkPseudo,
     strongPassword,
   }),
+  /** Registering custom properties */
   shortcuts: {
-    /** Registering custom properties */
     fields: {
       $isRequired: (field) => field.$rules.required?.$active ?? false,
     },
