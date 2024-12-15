@@ -51,6 +51,176 @@ importers:
         specifier: ^6.0.1
         version: 6.0.3(jiti@2.4.1)(sass@1.83.0)(yaml@2.6.1)
 
+  examples/collections-example:
+    dependencies:
+      '@regle/core':
+        specifier: 0.4.4
+        version: 0.4.4(vue@3.5.11)
+      '@regle/rules':
+        specifier: 0.4.4
+        version: 0.4.4(vue@3.5.11)
+      vue:
+        specifier: 3.5.11
+        version: 3.5.11
+    devDependencies:
+      '@tailwindcss/forms':
+        specifier: 0.5.9
+        version: 0.5.9(tailwindcss@3.4.16)
+      '@vitejs/plugin-vue':
+        specifier: ^5.2.1
+        version: 5.2.1(vite@6.0.3(jiti@2.4.1)(sass@1.83.0)(yaml@2.6.1))(vue@3.5.11)
+      '@vue/tsconfig':
+        specifier: ^0.6.0
+        version: 0.6.0(vue@3.5.11)
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.4.49)
+      postcss:
+        specifier: ^8.4.49
+        version: 8.4.49
+      tailwindcss:
+        specifier: ^3.4.16
+        version: 3.4.16
+      vite:
+        specifier: ^6.0.1
+        version: 6.0.3(jiti@2.4.1)(sass@1.83.0)(yaml@2.6.1)
+
+  examples/conditional-rules-example:
+    dependencies:
+      '@regle/core':
+        specifier: 0.4.4
+        version: 0.4.4(vue@3.5.11)
+      '@regle/rules':
+        specifier: 0.4.4
+        version: 0.4.4(vue@3.5.11)
+      vue:
+        specifier: 3.5.11
+        version: 3.5.11
+    devDependencies:
+      '@tailwindcss/forms':
+        specifier: 0.5.9
+        version: 0.5.9(tailwindcss@3.4.16)
+      '@vitejs/plugin-vue':
+        specifier: ^5.2.1
+        version: 5.2.1(vite@6.0.3(jiti@2.4.1)(sass@1.83.0)(yaml@2.6.1))(vue@3.5.11)
+      '@vue/tsconfig':
+        specifier: ^0.6.0
+        version: 0.6.0(vue@3.5.11)
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.4.49)
+      postcss:
+        specifier: ^8.4.49
+        version: 8.4.49
+      tailwindcss:
+        specifier: ^3.4.16
+        version: 3.4.16
+      vite:
+        specifier: ^6.0.1
+        version: 6.0.3(jiti@2.4.1)(sass@1.83.0)(yaml@2.6.1)
+
+  examples/custom-rules-example:
+    dependencies:
+      '@regle/core':
+        specifier: 0.4.4
+        version: 0.4.4(vue@3.5.11)
+      '@regle/rules':
+        specifier: 0.4.4
+        version: 0.4.4(vue@3.5.11)
+      vue:
+        specifier: 3.5.11
+        version: 3.5.11
+    devDependencies:
+      '@tailwindcss/forms':
+        specifier: 0.5.9
+        version: 0.5.9(tailwindcss@3.4.16)
+      '@vitejs/plugin-vue':
+        specifier: ^5.2.1
+        version: 5.2.1(vite@6.0.3(jiti@2.4.1)(sass@1.83.0)(yaml@2.6.1))(vue@3.5.11)
+      '@vue/tsconfig':
+        specifier: ^0.6.0
+        version: 0.6.0(vue@3.5.11)
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.4.49)
+      postcss:
+        specifier: ^8.4.49
+        version: 8.4.49
+      tailwindcss:
+        specifier: ^3.4.16
+        version: 3.4.16
+      vite:
+        specifier: ^6.0.1
+        version: 6.0.3(jiti@2.4.1)(sass@1.83.0)(yaml@2.6.1)
+
+  examples/required-indicators-example:
+    dependencies:
+      '@regle/core':
+        specifier: 0.4.4
+        version: 0.4.4(vue@3.5.11)
+      '@regle/rules':
+        specifier: 0.4.4
+        version: 0.4.4(vue@3.5.11)
+      vue:
+        specifier: 3.5.11
+        version: 3.5.11
+    devDependencies:
+      '@tailwindcss/forms':
+        specifier: 0.5.9
+        version: 0.5.9(tailwindcss@3.4.16)
+      '@vitejs/plugin-vue':
+        specifier: ^5.2.1
+        version: 5.2.1(vite@6.0.3(jiti@2.4.1)(sass@1.83.0)(yaml@2.6.1))(vue@3.5.11)
+      '@vue/tsconfig':
+        specifier: ^0.6.0
+        version: 0.6.0(vue@3.5.11)
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.4.49)
+      postcss:
+        specifier: ^8.4.49
+        version: 8.4.49
+      tailwindcss:
+        specifier: ^3.4.16
+        version: 3.4.16
+      vite:
+        specifier: ^6.0.1
+        version: 6.0.3(jiti@2.4.1)(sass@1.83.0)(yaml@2.6.1)
+
+  examples/server-validation-example:
+    dependencies:
+      '@regle/core':
+        specifier: 0.4.4
+        version: 0.4.4(vue@3.5.11)
+      '@regle/rules':
+        specifier: 0.4.4
+        version: 0.4.4(vue@3.5.11)
+      vue:
+        specifier: 3.5.11
+        version: 3.5.11
+    devDependencies:
+      '@tailwindcss/forms':
+        specifier: 0.5.9
+        version: 0.5.9(tailwindcss@3.4.16)
+      '@vitejs/plugin-vue':
+        specifier: ^5.2.1
+        version: 5.2.1(vite@6.0.3(jiti@2.4.1)(sass@1.83.0)(yaml@2.6.1))(vue@3.5.11)
+      '@vue/tsconfig':
+        specifier: ^0.6.0
+        version: 0.6.0(vue@3.5.11)
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.4.49)
+      postcss:
+        specifier: ^8.4.49
+        version: 8.4.49
+      tailwindcss:
+        specifier: ^3.4.16
+        version: 3.4.16
+      vite:
+        specifier: ^6.0.1
+        version: 6.0.3(jiti@2.4.1)(sass@1.83.0)(yaml@2.6.1)
+
   examples/simple-example:
     dependencies:
       '@regle/core':

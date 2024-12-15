@@ -48,7 +48,7 @@ export const useMyForm = defineStore('my-form', () => {
             $rewardEarly: true,
             minLength: applyIf(
               () => !!project.value.countMaintainers,
-              minLength(() => project.value.countMaintainers)
+              withMessage(and(required, minLength(1)), ({ $params: [min] }) => `You need at least ${min} maintainers`)
             ),
             $each: {
               name: { required },
