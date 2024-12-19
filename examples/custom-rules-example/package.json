@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@regle/core": "0.4.8",
-    "@regle/rules": "0.4.8",
+    "@regle/core": "0.4.9",
+    "@regle/rules": "0.4.9",
     "vue": "3.5.11"
   },
   "devDependencies": {
