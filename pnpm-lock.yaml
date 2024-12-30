@@ -11,11 +11,11 @@ importers:
   examples/advanced-example:
     dependencies:
       '@regle/core':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       '@regle/rules':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       check-password-strength:
         specifier: 2.0.10
         version: 2.0.10
@@ -54,11 +54,11 @@ importers:
   examples/collections-example:
     dependencies:
       '@regle/core':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       '@regle/rules':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       vue:
         specifier: 3.5.11
         version: 3.5.11
@@ -88,11 +88,11 @@ importers:
   examples/conditional-rules-example:
     dependencies:
       '@regle/core':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       '@regle/rules':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       vue:
         specifier: 3.5.11
         version: 3.5.11
@@ -122,11 +122,11 @@ importers:
   examples/custom-rules-example:
     dependencies:
       '@regle/core':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       '@regle/rules':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       vue:
         specifier: 3.5.11
         version: 3.5.11
@@ -156,11 +156,11 @@ importers:
   examples/required-indicators-example:
     dependencies:
       '@regle/core':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       '@regle/rules':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       vue:
         specifier: 3.5.11
         version: 3.5.11
@@ -190,11 +190,11 @@ importers:
   examples/server-validation-example:
     dependencies:
       '@regle/core':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       '@regle/rules':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       vue:
         specifier: 3.5.11
         version: 3.5.11
@@ -224,11 +224,11 @@ importers:
   examples/simple-example:
     dependencies:
       '@regle/core':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       '@regle/rules':
-        specifier: 0.4.9
-        version: 0.4.9(vue@3.5.11)
+        specifier: 0.5.4
+        version: 0.5.4(vue@3.5.11)
       vue:
         specifier: 3.5.11
         version: 3.5.11
@@ -542,13 +542,13 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@regle/core@0.4.9':
-    resolution: {integrity: sha512-rCUx7Do4UAvGIevN5AXLH0CxbEQKWuMo12z9V9JaYGDcIzkXQVcTonlnAtxUTypQwvLP8rCIVH0KnkxmWMw31w==}
+  '@regle/core@0.5.4':
+    resolution: {integrity: sha512-//g0tMPNZ/+qHxgdOO6F34O1fUAmjAxcrKdG6S82Ru2RMM8hTlwVKKpmKgWGwmlr1HtW7AJn4VY/ZwQidxvIIQ==}
     peerDependencies:
       vue: ^3.3.0
 
-  '@regle/rules@0.4.9':
-    resolution: {integrity: sha512-RmsO3IxEeyBXgDfUyyob4jVNM/NBK5z6R1igOH+ANjaQVHTBiwIS+sAWjxfX6RY3lDdCTaO0Zo8uFrVhDZK9UQ==}
+  '@regle/rules@0.5.4':
+    resolution: {integrity: sha512-nUQWuA2NThmyJD/WvKruAWfHB9sOzV/omECdGTmU60pWLSxUhK7ExLjq1/gwNRM4qcMPFyqlCUrtafZbKdrV8A==}
 
   '@rollup/rollup-android-arm-eabi@4.28.1':
     resolution: {integrity: sha512-2aZp8AES04KI2dy3Ss6/MDjXbwBzj+i0GqKtWXgw2/Ma6E4jJvujryO6gJAghIRVz7Vwr9Gtl/8na3nDUKpraQ==}
@@ -1432,13 +1432,13 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@regle/core@0.4.9(vue@3.5.11)':
+  '@regle/core@0.5.4(vue@3.5.11)':
     dependencies:
       vue: 3.5.11
 
-  '@regle/rules@0.4.9(vue@3.5.11)':
+  '@regle/rules@0.5.4(vue@3.5.11)':
     dependencies:
-      '@regle/core': 0.4.9(vue@3.5.11)
+      '@regle/core': 0.5.4(vue@3.5.11)
     transitivePeerDependencies:
       - vue
 
