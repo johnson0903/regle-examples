@@ -9,20 +9,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@regle/core": "0.5.4",
-    "@regle/rules": "0.5.4",
-    "check-password-strength": "2.0.10",
-    "pinia": "2.3.0",
-    "sass": "1.83.0",
-    "vue": "3.5.11"
+    "@regle/core": "0.7.1",
+    "@regle/rules": "0.7.1",
+    "check-password-strength": "3.0.0",
+    "pinia": "2.3.1",
+    "sass": "1.83.4",
+    "vue": "3.5.13"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "0.5.9",
+    "@tailwindcss/forms": "0.5.10",
     "@vitejs/plugin-vue": "^5.2.1",
-    "@vue/tsconfig": "^0.6.0",
+    "@vue/tsconfig": "^0.7.0",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.16",
-    "vite": "^6.0.1"
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.10"
   }
 }
