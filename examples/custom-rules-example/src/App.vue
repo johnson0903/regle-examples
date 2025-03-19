@@ -51,7 +51,7 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import { required, ruleHelpers } from '@regle/rules';
+import { isFilled, required } from '@regle/rules';
 import FieldError from './components/FieldError.vue';
 import { useRegle, createRule, type Maybe, type RegleComputedRules } from '@regle/core';
 
@@ -72,7 +72,7 @@ const form = ref({
 const customRule = createRule({
   validator(value: Maybe<string>, minLength: number, condition: boolean) {
     if (condition) {
-      if (ruleHelpers.isFilled(value)) {
+      if (isFilled(value)) {
         return value.length >= minLength;
       }
       return true;
@@ -101,9 +101,9 @@ const { r$ } = useRegle(form, rules, { autoDirty: false });
 const submit = async () => {
   isFormValid.value = false;
 
-  const { result } = await r$.$validate();
+  const { valid } = await r$.$validate();
 
-  if (result) {
+  if (valid) {
     isFormValid.value = true;
   }
 };

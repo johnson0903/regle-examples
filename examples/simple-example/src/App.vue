@@ -37,8 +37,8 @@ const { r$ } = useRegle({} as Form, {
 });
 
 async function submit() {
-  const { result, data } = await r$.$validate();
-  if (result) {
+  const { valid, data } = await r$.$validate();
+  if (valid) {
     alert('Your form is valid!');
     console.log(data);
     //           ^ Hover type here to see type safe result
@@ -126,7 +126,7 @@ async function submit() {
             <div class="flex justify-between">
               <button
                 class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-                @click="r$.$resetAll"
+                @click="r$.$reset({ toInitialState: true })"
               >
                 Reset
               </button>

@@ -16,12 +16,12 @@ function extractDirtyFields() {
 
 function reset() {
   dirtyFields.value = undefined;
-  myForm.r$.$resetAll();
+  myForm.r$.$reset({ toInitialState: true });
 }
 
 async function submit() {
-  const { result, data } = await myForm.r$.$validate();
-  if (result) {
+  const { valid, data } = await myForm.r$.$validate();
+  if (valid) {
     alert('Your form is valid!');
     console.log(data);
     //           ^ Hover type here to see type safe result

@@ -6,7 +6,7 @@
     <input
       v-model="modelValue"
       type="password"
-      :class="{ 'border-green-500': field.$valid, 'border-red-400': field.$error }"
+      :class="{ 'border-green-500': field.$correct, 'border-red-400': field.$error }"
       class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
       :placeholder
     />
@@ -20,25 +20,24 @@
         {{ tooltip }}
       </li>
     </ul>
-    <div v-else-if="field.$valid" class="text-sm mt-1 text-green-600">Your password is strong enough</div>
+    <div v-else-if="field.$correct" class="text-sm mt-1 text-green-600">Your password is strong enough</div>
   </div>
 </template>
 
 <script setup lang="ts">
-import type { useCustomRegle } from '../validations/regle.global.config';
 import {
   type InferRegleShortcuts,
   type Maybe,
   type RegleEnforceCustomRequiredRules,
   type RegleFieldStatus,
 } from '@regle/core';
-import { computed } from 'vue';
+import type { useCustomRegle } from '../validations/regle.global.config';
 
 const modelValue = defineModel<Maybe<string>>();
 
 const props = defineProps<{
   field: RegleFieldStatus<
-    string,
+    string | undefined,
     RegleEnforceCustomRequiredRules<typeof useCustomRegle, 'strongPassword'>,
     InferRegleShortcuts<typeof useCustomRegle>
   >;
