@@ -1,6 +1,6 @@
 import type { Maybe } from '@regle/core';
 import { createRule } from '@regle/core';
-import { ruleHelpers } from '@regle/rules';
+import { isFilled } from '@regle/rules';
 import { passwordStrength, type DiversityType, type Options } from 'check-password-strength';
 
 const diversityTypes: DiversityType[] = ['lowercase', 'uppercase', 'symbol', 'number'];
@@ -13,7 +13,7 @@ const diversityMessages: Record<DiversityType, string> = {
 
 export const strongPassword = createRule({
   validator: (value: Maybe<string>, options?: Options<string>) => {
-    if (ruleHelpers.isFilled(value)) {
+    if (isFilled(value)) {
       const result = passwordStrength(value, options);
       return {
         $valid: result.id > 1,

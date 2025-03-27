@@ -53,7 +53,7 @@
 import { computed, ref } from 'vue';
 import { isFilled, required } from '@regle/rules';
 import FieldError from './components/FieldError.vue';
-import { useRegle, createRule, type Maybe, type RegleComputedRules } from '@regle/core';
+import { useRegle, createRule, type Maybe, inferRules } from '@regle/core';
 
 const condition = ref(true);
 const isFormValid = ref(false);
@@ -85,7 +85,7 @@ const customRule = createRule({
 });
 
 const rules = computed(() => {
-  return {
+  return inferRules(form, {
     firstName: {
       required,
       customRule: customRule(15, condition),
@@ -93,10 +93,10 @@ const rules = computed(() => {
     lastName: {
       required,
     },
-  } satisfies RegleComputedRules<typeof form>;
+  });
 });
 
-const { r$ } = useRegle(form, rules, { autoDirty: false });
+const { r$ } = useRegle(form, rules);
 
 const submit = async () => {
   isFormValid.value = false;

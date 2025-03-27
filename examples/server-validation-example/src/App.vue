@@ -43,7 +43,7 @@
 import { computed, ref } from 'vue';
 import { required, minLength } from '@regle/rules';
 import FieldError from './components/FieldError.vue';
-import { useRegle, type RegleComputedRules, type RegleExternalErrorTree } from '@regle/core';
+import { inferRules, useRegle, type RegleExternalErrorTree } from '@regle/core';
 
 const isFormValid = ref(false);
 const isLoading = ref(false);
@@ -59,7 +59,7 @@ const form = ref<Form>({
 });
 
 const rules = computed(() => {
-  return {
+  return inferRules(form, {
     firstName: {
       required,
       minLength: minLength(10),
@@ -68,7 +68,7 @@ const rules = computed(() => {
       required,
       minLength: minLength(10),
     },
-  } satisfies RegleComputedRules<typeof form>;
+  });
 });
 
 const externalErrors = ref<RegleExternalErrorTree<Form>>({});

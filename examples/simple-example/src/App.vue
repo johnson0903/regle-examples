@@ -31,7 +31,7 @@ const { r$ } = useRegle({} as Form, {
     ),
   },
   acceptTC: {
-    $autoDirty: false,
+    $rewardEarly: true,
     required: withMessage(and(required, checked), 'You must accept the terms and conditions'),
   },
 });

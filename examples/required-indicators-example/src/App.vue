@@ -51,7 +51,7 @@
 import { computed, ref } from 'vue';
 import FieldError from './components/FieldError.vue';
 import { applyIf, minLength, required } from '@regle/rules';
-import { defineRegleConfig, type RegleComputedRules } from '@regle/core';
+import { defineRegleConfig, inferRules } from '@regle/core';
 
 const condition = ref(true);
 const isFormValid = ref(false);
@@ -62,7 +62,7 @@ const form = ref({
 });
 
 const rules = computed(() => {
-  return {
+  return inferRules(form, {
     firstName: {
       required,
       minLength: applyIf(condition, minLength(10)),
@@ -71,7 +71,7 @@ const rules = computed(() => {
       required,
       minLength: applyIf(condition, minLength(15)),
     },
-  } satisfies RegleComputedRules<typeof form>;
+  });
 });
 
 const { useRegle } = defineRegleConfig({
