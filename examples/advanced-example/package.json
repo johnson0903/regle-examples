@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@regle/core": "1.1.0",
-    "@regle/rules": "1.1.0",
+    "@regle/core": "1.1.2",
+    "@regle/rules": "1.1.2",
     "check-password-strength": "3.0.0",
     "pinia": "3.0.2",
     "sass": "1.86.0",
