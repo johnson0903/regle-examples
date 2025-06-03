@@ -11,11 +11,11 @@ importers:
   examples/advanced-example:
     dependencies:
       '@regle/core':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       '@regle/rules':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       check-password-strength:
         specifier: 3.0.0
         version: 3.0.0
@@ -34,7 +34,7 @@ importers:
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^5.2.3
-        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.86.0)(yaml@2.7.1))(vue@3.5.13)
+        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.86.0)(yaml@2.8.0))(vue@3.5.13)
       '@vue/tsconfig':
         specifier: ^0.7.0
         version: 0.7.0(vue@3.5.13)
@@ -49,16 +49,16 @@ importers:
         version: 3.4.17
       vite:
         specifier: ^6.3.2
-        version: 6.3.2(jiti@2.4.2)(sass@1.86.0)(yaml@2.7.1)
+        version: 6.3.2(jiti@2.4.2)(sass@1.86.0)(yaml@2.8.0)
 
   examples/collections-example:
     dependencies:
       '@regle/core':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       '@regle/rules':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       vue:
         specifier: 3.5.13
         version: 3.5.13
@@ -68,7 +68,7 @@ importers:
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^5.2.3
-        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1))(vue@3.5.13)
+        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0))(vue@3.5.13)
       '@vue/tsconfig':
         specifier: ^0.7.0
         version: 0.7.0(vue@3.5.13)
@@ -83,16 +83,16 @@ importers:
         version: 3.4.17
       vite:
         specifier: ^6.3.2
-        version: 6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1)
+        version: 6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0)
 
   examples/conditional-rules-example:
     dependencies:
       '@regle/core':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       '@regle/rules':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       vue:
         specifier: 3.5.13
         version: 3.5.13
@@ -102,7 +102,7 @@ importers:
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^5.2.3
-        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1))(vue@3.5.13)
+        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0))(vue@3.5.13)
       '@vue/tsconfig':
         specifier: ^0.7.0
         version: 0.7.0(vue@3.5.13)
@@ -117,16 +117,16 @@ importers:
         version: 3.4.17
       vite:
         specifier: ^6.3.2
-        version: 6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1)
+        version: 6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0)
 
   examples/custom-rules-example:
     dependencies:
       '@regle/core':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       '@regle/rules':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       vue:
         specifier: 3.5.13
         version: 3.5.13
@@ -136,7 +136,7 @@ importers:
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^5.2.3
-        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1))(vue@3.5.13)
+        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0))(vue@3.5.13)
       '@vue/tsconfig':
         specifier: ^0.7.0
         version: 0.7.0(vue@3.5.13)
@@ -151,16 +151,16 @@ importers:
         version: 3.4.17
       vite:
         specifier: ^6.3.2
-        version: 6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1)
+        version: 6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0)
 
   examples/required-indicators-example:
     dependencies:
       '@regle/core':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       '@regle/rules':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       vue:
         specifier: 3.5.13
         version: 3.5.13
@@ -170,7 +170,7 @@ importers:
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^5.2.3
-        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1))(vue@3.5.13)
+        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0))(vue@3.5.13)
       '@vue/tsconfig':
         specifier: ^0.7.0
         version: 0.7.0(vue@3.5.13)
@@ -185,16 +185,16 @@ importers:
         version: 3.4.17
       vite:
         specifier: ^6.3.2
-        version: 6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1)
+        version: 6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0)
 
   examples/server-validation-example:
     dependencies:
       '@regle/core':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       '@regle/rules':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       vue:
         specifier: 3.5.13
         version: 3.5.13
@@ -204,7 +204,7 @@ importers:
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^5.2.3
-        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1))(vue@3.5.13)
+        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0))(vue@3.5.13)
       '@vue/tsconfig':
         specifier: ^0.7.0
         version: 0.7.0(vue@3.5.13)
@@ -219,16 +219,16 @@ importers:
         version: 3.4.17
       vite:
         specifier: ^6.3.2
-        version: 6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1)
+        version: 6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0)
 
   examples/simple-example:
     dependencies:
       '@regle/core':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       '@regle/rules':
-        specifier: 1.1.2
-        version: 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+        specifier: 1.3.0
+        version: 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
       vue:
         specifier: 3.5.13
         version: 3.5.13
@@ -238,7 +238,7 @@ importers:
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^5.2.3
-        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1))(vue@3.5.13)
+        version: 5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0))(vue@3.5.13)
       '@vue/tsconfig':
         specifier: ^0.7.0
         version: 0.7.0(vue@3.5.13)
@@ -253,7 +253,7 @@ importers:
         version: 3.4.17
       vite:
         specifier: ^6.3.2
-        version: 6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1)
+        version: 6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0)
 
 packages:
 
@@ -548,8 +548,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@regle/core@1.1.2':
-    resolution: {integrity: sha512-CrPGOc53C3+9JoHZKoa3qwon354DM1QsJKUdsXURul7v4sKihiYmUd9Dy/R7YXVVOd3Ym6wkpzVpMJDrNEX8ig==}
+  '@regle/core@1.3.0':
+    resolution: {integrity: sha512-D+0DIxrn5FeKNTiEgUeYrlnV2vKJXI65KmcuqlHmKc33Th63GaGDLPY4DSDHi6c8AG7ZQmBnB0LqUzDYJDNxWQ==}
     peerDependencies:
       pinia: '>=2.2.5'
       vue: '>=3.3.0'
@@ -557,8 +557,8 @@ packages:
       pinia:
         optional: true
 
-  '@regle/rules@1.1.2':
-    resolution: {integrity: sha512-rcZ1g4oCgmKbmDSyDiN1gvotkS0C+ZgUHZ52d2w/Oyd/tC8ZaaK/OQphP5OUK1z078TYJUQGkeK6RoHXM0lVGQ==}
+  '@regle/rules@1.3.0':
+    resolution: {integrity: sha512-JAfJice14/tf0+zyQVTdkhN6ViY/jbavQpGwUHLOMyXz2Q/n2DXw6uLHVAgeecvkqV/DvX3RuGc1VbGAM5X89w==}
 
   '@rollup/rollup-android-arm-eabi@4.40.0':
     resolution: {integrity: sha512-+Fbls/diZ0RDerhE8kyC6hjADCXA1K4yVNlH0EYfd2XjyH0UGgzaQ8MlT0pCXAThfxv3QUAczHaL+qSv1E4/Cg==}
@@ -923,8 +923,8 @@ packages:
   immutable@5.0.3:
     resolution: {integrity: sha512-P8IdPQHq3lA1xVeBRi5VPqUm5HDgKnx0Ru51wZz5mjxHr5n3RWhjIpOFU7ybkUxfB+5IToy+OLaHYDBIWsv+uw==}
 
-  immutable@5.1.1:
-    resolution: {integrity: sha512-3jatXi9ObIsPGr3N5hGw/vWWcTkq6hUYhpQz4k0wLC+owqWi/LiugIw9x0EdNZ2yGedKN/HzePiBvaJRXa0Ujg==}
+  immutable@5.1.2:
+    resolution: {integrity: sha512-qHKXW1q6liAk1Oys6umoaZbDRqjcjgSrbnrifHsfsttza7zcvRAsL7mMV6xWcyhwQy7Xj5v4hhbr6b+iDYwlmQ==}
 
   is-binary-path@2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
@@ -1159,8 +1159,8 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  sass@1.87.0:
-    resolution: {integrity: sha512-d0NoFH4v6SjEK7BoX810Jsrhj7IQSYHAHLi/iSpgqKc7LaIDshFRlSg5LOymf9FqQhxEHs2W5ZQXlvy0KD45Uw==}
+  sass@1.89.1:
+    resolution: {integrity: sha512-eMLLkl+qz7tx/0cJ9wI+w09GQ2zodTkcE/aVfywwdlRcI3EO19xGnbmJwg/JMIm+5MxVJ6outddLZ4Von4E++Q==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -1311,9 +1311,9 @@ packages:
     engines: {node: '>= 14'}
     hasBin: true
 
-  yaml@2.7.1:
-    resolution: {integrity: sha512-10ULxpnOCQXxJvBgxsn9ptjq6uviG/htZKk9veJGhlqn3w/DxQ631zFF+nlQXLwmImeS5amR2dl2U8sg6U9jsQ==}
-    engines: {node: '>= 14'}
+  yaml@2.8.0:
+    resolution: {integrity: sha512-4lLa/EcQCB0cJkyts+FpIRx5G/llPxfP6VQU5KByHEhLxY3IJCH0f0Hy1MHI8sClTvsIb8qwRJ6R/ZdlDJ/leQ==}
+    engines: {node: '>= 14.6'}
     hasBin: true
 
 snapshots:
@@ -1510,15 +1510,15 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@regle/core@1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)':
+  '@regle/core@1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)':
     dependencies:
       vue: 3.5.13
     optionalDependencies:
       pinia: 3.0.2(vue@3.5.13)
 
-  '@regle/rules@1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)':
+  '@regle/rules@1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)':
     dependencies:
-      '@regle/core': 1.1.2(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+      '@regle/core': 1.3.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
     transitivePeerDependencies:
       - pinia
       - vue
@@ -1590,14 +1590,14 @@ snapshots:
 
   '@types/estree@1.0.7': {}
 
-  '@vitejs/plugin-vue@5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.86.0)(yaml@2.7.1))(vue@3.5.13)':
+  '@vitejs/plugin-vue@5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.86.0)(yaml@2.8.0))(vue@3.5.13)':
     dependencies:
-      vite: 6.3.2(jiti@2.4.2)(sass@1.86.0)(yaml@2.7.1)
+      vite: 6.3.2(jiti@2.4.2)(sass@1.86.0)(yaml@2.8.0)
       vue: 3.5.13
 
-  '@vitejs/plugin-vue@5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1))(vue@3.5.13)':
+  '@vitejs/plugin-vue@5.2.3(vite@6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0))(vue@3.5.13)':
     dependencies:
-      vite: 6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1)
+      vite: 6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0)
       vue: 3.5.13
 
   '@vue/compiler-core@3.5.13':
@@ -1880,7 +1880,7 @@ snapshots:
 
   immutable@5.0.3: {}
 
-  immutable@5.1.1:
+  immutable@5.1.2:
     optional: true
 
   is-binary-path@2.1.0:
@@ -2089,10 +2089,10 @@ snapshots:
     optionalDependencies:
       '@parcel/watcher': 2.5.1
 
-  sass@1.87.0:
+  sass@1.89.1:
     dependencies:
       chokidar: 4.0.3
-      immutable: 5.1.1
+      immutable: 5.1.2
       source-map-js: 1.2.1
     optionalDependencies:
       '@parcel/watcher': 2.5.1
@@ -2200,7 +2200,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite@6.3.2(jiti@2.4.2)(sass@1.86.0)(yaml@2.7.1):
+  vite@6.3.2(jiti@2.4.2)(sass@1.86.0)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.3
       fdir: 6.4.4(picomatch@4.0.2)
@@ -2212,9 +2212,9 @@ snapshots:
       fsevents: 2.3.3
       jiti: 2.4.2
       sass: 1.86.0
-      yaml: 2.7.1
+      yaml: 2.8.0
 
-  vite@6.3.2(jiti@2.4.2)(sass@1.87.0)(yaml@2.7.1):
+  vite@6.3.2(jiti@2.4.2)(sass@1.89.1)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.3
       fdir: 6.4.4(picomatch@4.0.2)
@@ -2225,8 +2225,8 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
       jiti: 2.4.2
-      sass: 1.87.0
-      yaml: 2.7.1
+      sass: 1.89.1
+      yaml: 2.8.0
 
   vue@3.5.13:
     dependencies:
@@ -2254,5 +2254,5 @@ snapshots:
 
   yaml@2.7.0: {}
 
-  yaml@2.7.1:
+  yaml@2.8.0:
     optional: true
