@@ -6,7 +6,7 @@
         <div class="flex flex-col gap-2">
           <div class="flex gap-2">
             <label required>First Name</label>
-            <span class="text-red-600" v-if="r$.$fields.firstName.$isRequired">*</span>
+            <span class="text-red-600" v-if="r$.firstName.$isRequired">*</span>
           </div>
 
           <input
@@ -21,7 +21,7 @@
         <div class="flex flex-col gap-2">
           <div class="flex gap-2">
             <label required>Last Name</label>
-            <span class="text-red-600" v-if="r$.$fields.lastName.$isRequired">*</span>
+            <span class="text-red-600" v-if="r$.lastName.$isRequired">*</span>
           </div>
 
           <input

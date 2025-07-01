@@ -38,21 +38,21 @@ async function submit() {
           <div class="grid grid-cols-1 gap-4">
             <MyInput
               v-model="myForm.r$.$value.user.pseudo"
-              :field="myForm.r$.$fields.user.$fields.pseudo"
+              :field="myForm.r$.user.pseudo"
               label="Pseudo"
               placeholder="Type your unique pseudo"
             />
 
             <Password
               v-model="myForm.r$.$value.user.password"
-              :field="myForm.r$.$fields.user.$fields.password"
+              :field="myForm.r$.user.password"
               label="Password"
               placeholder="********"
             />
 
             <MyInput
               v-model="myForm.r$.$value.user.confirmPassword"
-              :field="myForm.r$.$fields.user.$fields.confirmPassword"
+              :field="myForm.r$.user.confirmPassword"
               type="password"
               label="Confirm your password"
               placeholder="********"
@@ -66,10 +66,10 @@ async function submit() {
 
             <h3 class="text-xl font-bold">Projects</h3>
             <div class="flex flex-col gap-2">
-              <template v-if="myForm.r$.$fields.projects.$each.length">
+              <template v-if="myForm.r$.projects.$each.length">
                 <div
                   class="rounded border border-gray-400 border-dashed p-4"
-                  v-for="(project, index) of myForm.r$.$fields.projects.$each"
+                  v-for="(project, index) of myForm.r$.projects.$each"
                   :key="project.$id"
                 >
                   <div class="flex justify-between">
@@ -82,23 +82,19 @@ async function submit() {
                     </button>
                   </div>
                   <div class="flex flex-col gap-2">
+                    <MyInput v-model="project.name.$value" :field="project.name" label="Name of the project" />
                     <MyInput
-                      v-model="project.$fields.name.$value"
-                      :field="project.$fields.name"
-                      label="Name of the project"
-                    />
-                    <MyInput
-                      v-model="project.$fields.countMaintainers.$value"
+                      v-model="project.countMaintainers.$value"
                       type="number"
-                      :field="project.$fields.countMaintainers"
+                      :field="project.countMaintainers"
                       label="Number of maintainers"
                     />
 
                     <div class="flex flex-col gap-2">
-                      <template v-if="project.$fields.maintainers.$each.length">
+                      <template v-if="project.maintainers.$each.length">
                         <div
                           class="rounded border border-gray-400 border-dashed p-4"
-                          v-for="(maintainer, index) of project.$fields.maintainers.$each"
+                          v-for="(maintainer, index) of project.maintainers.$each"
                           :key="maintainer.$id"
                         >
                           <div class="flex justify-between">
@@ -112,15 +108,15 @@ async function submit() {
                           </div>
                           <div class="flex flex-col gap-2">
                             <MyInput
-                              v-model="maintainer.$fields.name.$value"
-                              :field="maintainer.$fields.name"
+                              v-model="maintainer.name.$value"
+                              :field="maintainer.name"
                               label="Name of the maintainer"
                             />
                           </div>
                         </div>
                       </template>
                       <div v-else class="rounded border border-gray-400 border-dashed p-4">No maintainers</div>
-                      <FieldError :errors="project.$fields.maintainers.$errors.$self" />
+                      <FieldError :errors="project.maintainers.$errors.$self" />
                       <div class="flex justify-center">
                         <button
                           class="bg-white mt-2 hover:bg-gray-100 text-gray-800 text-sm font-semibold py-1 px-3 border border-gray-400 rounded shadow"
@@ -134,7 +130,7 @@ async function submit() {
                 </div>
               </template>
               <div v-else class="rounded border border-gray-400 border-dashed p-4">No projects</div>
-              <FieldError :errors="myForm.r$.$fields.projects.$errors.$self" />
+              <FieldError :errors="myForm.r$.projects.$errors.$self" />
               <div class="flex justify-center">
                 <button
                   class="bg-white mt-2 hover:bg-gray-100 text-gray-800 text-sm font-semibold py-1 px-3 border border-gray-400 rounded shadow"

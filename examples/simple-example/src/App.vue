@@ -61,7 +61,7 @@ async function submit() {
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                 placeholder="John Dupond"
               />
-              <FieldError :errors="r$.$fields.fullName.$errors" />
+              <FieldError :errors="r$.fullName.$errors" />
             </label>
             <label class="block">
               <span class="text-gray-700">Email address</span>
@@ -71,7 +71,7 @@ async function submit() {
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                 placeholder="john@example.com"
               />
-              <FieldError :errors="r$.$fields.email.$errors" />
+              <FieldError :errors="r$.email.$errors" />
             </label>
             <label class="block">
               <span class="text-gray-700">When is your event?</span>
@@ -80,9 +80,9 @@ async function submit() {
                 type="date"
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
-              <FieldError :errors="r$.$fields.eventDate.$errors" />
-              <ul class="text-sm text-gray-400 mt-1" v-if="r$.$fields.eventDate.$tooltips.length">
-                <li v-for="tooltip of r$.$fields.eventDate.$tooltips" :key="tooltip">{{ tooltip }}</li>
+              <FieldError :errors="r$.eventDate.$errors" />
+              <ul class="text-sm text-gray-400 mt-1" v-if="r$.eventDate.$tooltips.length">
+                <li v-for="tooltip of r$.eventDate.$tooltips" :key="tooltip">{{ tooltip }}</li>
               </ul>
             </label>
             <label class="block">
@@ -97,7 +97,7 @@ async function submit() {
                 <option value="Borthday">Birthday</option>
                 <option value="Other">Other</option>
               </select>
-              <FieldError :errors="r$.$fields.eventType.$errors" />
+              <FieldError :errors="r$.eventType.$errors" />
             </label>
             <label class="block">
               <span class="text-gray-700">Additional details</span>
@@ -106,7 +106,7 @@ async function submit() {
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                 rows="3"
               ></textarea>
-              <FieldError :errors="r$.$fields.details.$errors" />
+              <FieldError :errors="r$.details.$errors" />
             </label>
             <div class="block">
               <div class="mt-2">
@@ -119,7 +119,7 @@ async function submit() {
                     />
                     <span class="ml-2">I accept terms and conditions</span>
                   </label>
-                  <FieldError :errors="r$.$fields.acceptTC.$errors" />
+                  <FieldError :errors="r$.acceptTC.$errors" />
                 </div>
               </div>
             </div>
