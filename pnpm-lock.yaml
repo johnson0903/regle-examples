@@ -4,6 +4,15 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@regle/core':
+      specifier: 1.7.0
+      version: 1.7.0
+    '@regle/rules':
+      specifier: 1.7.0
+      version: 1.7.0
+
 importers:
 
   .: {}
@@ -11,33 +20,36 @@ importers:
   examples/advanced-example:
     dependencies:
       '@regle/core':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       check-password-strength:
         specifier: 3.0.0
         version: 3.0.0
       pinia:
         specifier: 3.0.3
-        version: 3.0.3(vue@3.5.17)
+        version: 3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2))
       sass:
         specifier: 1.89.2
         version: 1.89.2
       vue:
         specifier: 3.5.17
-        version: 3.5.17
+        version: 3.5.17(typescript@5.9.2)
+      vue-tsc:
+        specifier: 3.0.5
+        version: 3.0.5(typescript@5.9.2)
     devDependencies:
       '@tailwindcss/forms':
         specifier: 0.5.10
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^6.0.0
-        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17)
+        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.9.2))
       '@vue/tsconfig':
         specifier: ^0.7.0
-        version: 0.7.0(vue@3.5.17)
+        version: 0.7.0(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2))
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.6)
@@ -54,24 +66,27 @@ importers:
   examples/collections-example:
     dependencies:
       '@regle/core':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       vue:
         specifier: 3.5.17
-        version: 3.5.17
+        version: 3.5.17(typescript@5.9.2)
+      vue-tsc:
+        specifier: 3.0.5
+        version: 3.0.5(typescript@5.9.2)
     devDependencies:
       '@tailwindcss/forms':
         specifier: 0.5.10
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^6.0.0
-        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17)
+        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.9.2))
       '@vue/tsconfig':
         specifier: ^0.7.0
-        version: 0.7.0(vue@3.5.17)
+        version: 0.7.0(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2))
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.6)
@@ -88,24 +103,27 @@ importers:
   examples/conditional-rules-example:
     dependencies:
       '@regle/core':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       vue:
         specifier: 3.5.17
-        version: 3.5.17
+        version: 3.5.17(typescript@5.9.2)
+      vue-tsc:
+        specifier: 3.0.5
+        version: 3.0.5(typescript@5.9.2)
     devDependencies:
       '@tailwindcss/forms':
         specifier: 0.5.10
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^6.0.0
-        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17)
+        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.9.2))
       '@vue/tsconfig':
         specifier: ^0.7.0
-        version: 0.7.0(vue@3.5.17)
+        version: 0.7.0(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2))
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.6)
@@ -122,24 +140,27 @@ importers:
   examples/custom-rules-example:
     dependencies:
       '@regle/core':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       vue:
         specifier: 3.5.17
-        version: 3.5.17
+        version: 3.5.17(typescript@5.9.2)
+      vue-tsc:
+        specifier: 3.0.5
+        version: 3.0.5(typescript@5.9.2)
     devDependencies:
       '@tailwindcss/forms':
         specifier: 0.5.10
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^6.0.0
-        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17)
+        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.9.2))
       '@vue/tsconfig':
         specifier: ^0.7.0
-        version: 0.7.0(vue@3.5.17)
+        version: 0.7.0(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2))
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.6)
@@ -156,24 +177,27 @@ importers:
   examples/required-indicators-example:
     dependencies:
       '@regle/core':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       vue:
         specifier: 3.5.17
-        version: 3.5.17
+        version: 3.5.17(typescript@5.9.2)
+      vue-tsc:
+        specifier: 3.0.5
+        version: 3.0.5(typescript@5.9.2)
     devDependencies:
       '@tailwindcss/forms':
         specifier: 0.5.10
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^6.0.0
-        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17)
+        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.9.2))
       '@vue/tsconfig':
         specifier: ^0.7.0
-        version: 0.7.0(vue@3.5.17)
+        version: 0.7.0(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2))
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.6)
@@ -190,24 +214,27 @@ importers:
   examples/server-validation-example:
     dependencies:
       '@regle/core':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       vue:
         specifier: 3.5.17
-        version: 3.5.17
+        version: 3.5.17(typescript@5.9.2)
+      vue-tsc:
+        specifier: 3.0.5
+        version: 3.0.5(typescript@5.9.2)
     devDependencies:
       '@tailwindcss/forms':
         specifier: 0.5.10
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^6.0.0
-        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17)
+        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.9.2))
       '@vue/tsconfig':
         specifier: ^0.7.0
-        version: 0.7.0(vue@3.5.17)
+        version: 0.7.0(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2))
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.6)
@@ -224,24 +251,27 @@ importers:
   examples/simple-example:
     dependencies:
       '@regle/core':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 1.5.1
-        version: 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+        specifier: 'catalog:'
+        version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       vue:
         specifier: 3.5.17
-        version: 3.5.17
+        version: 3.5.17(typescript@5.9.2)
+      vue-tsc:
+        specifier: 3.0.5
+        version: 3.0.5(typescript@5.9.2)
     devDependencies:
       '@tailwindcss/forms':
         specifier: 0.5.10
         version: 0.5.10(tailwindcss@3.4.17)
       '@vitejs/plugin-vue':
         specifier: ^6.0.0
-        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17)
+        version: 6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.9.2))
       '@vue/tsconfig':
         specifier: ^0.7.0
-        version: 0.7.0(vue@3.5.17)
+        version: 0.7.0(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2))
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.6)
@@ -551,8 +581,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@regle/core@1.5.1':
-    resolution: {integrity: sha512-8pqVQY585C7E50JYZQ6NUinmM0kpw8iY3y12HMeAZUdu8DAi+ir/ilxoZNQ9K0LqB6VIzX61CcvBXymhMBwDWQ==}
+  '@regle/core@1.7.0':
+    resolution: {integrity: sha512-craEj9WZIH/TH/ilGHsVErKxpespd2+wTS4eyo0jaxJSHtt4pjQeGLOcmcmDnMADt1ljc94IrzBC1b9Jx11+cA==}
     peerDependencies:
       pinia: '>=2.2.5'
       vue: '>=3.3.0'
@@ -560,8 +590,8 @@ packages:
       pinia:
         optional: true
 
-  '@regle/rules@1.5.1':
-    resolution: {integrity: sha512-Q8cttf+2SBOC3jRX5K3pymjkSnGBz1475qfdcngeRwZBvTgCpxdGR9sq4gg5N2sH+EQNwZ86y+1XfhQEdr5SDQ==}
+  '@regle/rules@1.7.0':
+    resolution: {integrity: sha512-J4AmR2r9cs62AyJ4ykraJJVpeUU5mF3REoaWvM/Yy+3mg9KpuSeBRWI9KA+3K10CDrePsZzzknkcx+VEZbgnjQ==}
 
   '@rolldown/pluginutils@1.0.0-beta.19':
     resolution: {integrity: sha512-3FL3mnMbPu0muGOCaKAhhFEYmqv9eTfPSJRJmANrCwtgK8VuxpsZDGK+m0LYAGoyO8+0j5uRe4PeyPDK1yA/hA==}
@@ -681,6 +711,15 @@ packages:
       vite: ^5.0.0 || ^6.0.0 || ^7.0.0
       vue: ^3.2.25
 
+  '@volar/language-core@2.4.22':
+    resolution: {integrity: sha512-gp4M7Di5KgNyIyO903wTClYBavRt6UyFNpc5LWfyZr1lBsTUY+QrVZfmbNF2aCyfklBOVk9YC4p+zkwoyT7ECg==}
+
+  '@volar/source-map@2.4.22':
+    resolution: {integrity: sha512-L2nVr/1vei0xKRgO2tYVXtJYd09HTRjaZi418e85Q+QdbbqA8h7bBjfNyPPSsjnrOO4l4kaAo78c8SQUAdHvgA==}
+
+  '@volar/typescript@2.4.22':
+    resolution: {integrity: sha512-6ZczlJW1/GWTrNnkmZxJp4qyBt/SGVlcTuCWpI5zLrdPdCZsj66Aff9ZsfFaT3TyjG8zVYgBMYPuCm/eRkpcpQ==}
+
   '@vue/compiler-core@3.5.17':
     resolution: {integrity: sha512-Xe+AittLbAyV0pabcN7cP7/BenRBNcteM4aSDCtRvGw0d9OL+HG1u/XHLY/kt1q4fyMeZYXyIYrsHuPSiDPosA==}
 
@@ -693,6 +732,9 @@ packages:
   '@vue/compiler-ssr@3.5.17':
     resolution: {integrity: sha512-hkDbA0Q20ZzGgpj5uZjb9rBzQtIHLS78mMilwrlpWk2Ep37DYntUz0PonQ6kr113vfOEdM+zTBuJDaceNIW0tQ==}
 
+  '@vue/compiler-vue2@2.7.16':
+    resolution: {integrity: sha512-qYC3Psj9S/mfu9uVi5WvNZIzq+xnXMhOwbTFKKDD7b1lhpnn71jXSFdTQ+WsIEk0ONCd7VV2IMm7ONl6tbQ86A==}
+
   '@vue/devtools-api@7.7.7':
     resolution: {integrity: sha512-lwOnNBH2e7x1fIIbVT7yF5D+YWhqELm55/4ZKf45R9T8r9dE2AIOy8HKjfqzGsoTHFbWbr337O4E0A0QADnjBg==}
 
@@ -701,6 +743,14 @@ packages:
 
   '@vue/devtools-shared@7.7.7':
     resolution: {integrity: sha512-+udSj47aRl5aKb0memBvcUG9koarqnxNM5yjuREvqwK6T3ap4mn3Zqqc17QrBFTqSMjr3HK1cvStEZpMDpfdyw==}
+
+  '@vue/language-core@3.0.5':
+    resolution: {integrity: sha512-gCEjn9Ik7I/seHVNIEipOm8W+f3/kg60e8s1IgIkMYma2wu9ZGUTMv3mSL2bX+Md2L8fslceJ4SU8j1fgSRoiw==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   '@vue/reactivity@3.5.17':
     resolution: {integrity: sha512-l/rmw2STIscWi7SNJp708FK4Kofs97zc/5aEPQh4bOsReD/8ICuBcEmS7KGwDj5ODQLYWVN2lNibKJL1z5b+Lw==}
@@ -729,6 +779,9 @@ packages:
         optional: true
       vue:
         optional: true
+
+  alien-signals@2.0.6:
+    resolution: {integrity: sha512-P3TxJSe31bUHBiblg59oU1PpaWPtmxF9GhJ/cB7OkgJ0qN/ifFSKUI25/v8ZhsT+lIG6ac8DpTOplXxORX6F3Q==}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -830,6 +883,9 @@ packages:
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
+  de-indent@1.0.2:
+    resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
+
   detect-libc@1.0.3:
     resolution: {integrity: sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg==}
     engines: {node: '>=0.10'}
@@ -923,6 +979,10 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
+  he@1.2.0:
+    resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
+    hasBin: true
+
   hookable@5.5.3:
     resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
 
@@ -1007,6 +1067,9 @@ packages:
   mitt@3.0.1:
     resolution: {integrity: sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==}
 
+  muggle-string@0.4.1:
+    resolution: {integrity: sha512-VNTrAak/KhO2i8dqqnqnAHOa3cYBwXEZe9h+D5h/1ZqFSTEFHdM65lR7RoIqq3tBBYavsOXV84NoHXZ0AkPyqQ==}
+
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
 
@@ -1039,6 +1102,9 @@ packages:
 
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
+
+  path-browserify@1.0.1:
+    resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
 
   path-key@3.1.1:
     resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
@@ -1234,6 +1300,11 @@ packages:
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
+  typescript@5.9.2:
+    resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   update-browserslist-db@1.1.3:
     resolution: {integrity: sha512-UxhIZQ+QInVdunkDAaiazvvT/+fXL5Osr0JZlJulepYu6Jd7qJtDZjlur0emRlT71EN3ScPoE7gvsuIKKNavKw==}
     hasBin: true
@@ -1282,6 +1353,15 @@ packages:
         optional: true
       yaml:
         optional: true
+
+  vscode-uri@3.1.0:
+    resolution: {integrity: sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==}
+
+  vue-tsc@3.0.5:
+    resolution: {integrity: sha512-PsTFN9lo1HJCrZw9NoqjYcAbYDXY0cOKyuW2E7naX5jcaVyWpqEsZOHN9Dws5890E8e5SDAD4L4Zam3dxG3/Cw==}
+    hasBin: true
+    peerDependencies:
+      typescript: '>=5.0.0'
 
   vue@3.5.17:
     resolution: {integrity: sha512-LbHV3xPN9BeljML+Xctq4lbz2lVHCR6DtbpTf5XIO6gugpXUN49j2QQPcMj086r9+AkJ0FfUT8xjulKKBkkr9g==}
@@ -1510,15 +1590,15 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@regle/core@1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)':
+  '@regle/core@1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))':
     dependencies:
-      vue: 3.5.17
+      vue: 3.5.17(typescript@5.9.2)
     optionalDependencies:
-      pinia: 3.0.3(vue@3.5.17)
+      pinia: 3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2))
 
-  '@regle/rules@1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)':
+  '@regle/rules@1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))':
     dependencies:
-      '@regle/core': 1.5.1(pinia@3.0.3(vue@3.5.17))(vue@3.5.17)
+      '@regle/core': 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
     transitivePeerDependencies:
       - pinia
       - vue
@@ -1592,11 +1672,23 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
-  '@vitejs/plugin-vue@6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17)':
+  '@vitejs/plugin-vue@6.0.0(vite@7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.9.2))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.19
       vite: 7.0.0(jiti@2.4.2)(sass@1.89.2)(yaml@2.8.0)
-      vue: 3.5.17
+      vue: 3.5.17(typescript@5.9.2)
+
+  '@volar/language-core@2.4.22':
+    dependencies:
+      '@volar/source-map': 2.4.22
+
+  '@volar/source-map@2.4.22': {}
+
+  '@volar/typescript@2.4.22':
+    dependencies:
+      '@volar/language-core': 2.4.22
+      path-browserify: 1.0.1
+      vscode-uri: 3.1.0
 
   '@vue/compiler-core@3.5.17':
     dependencies:
@@ -1628,6 +1720,11 @@ snapshots:
       '@vue/compiler-dom': 3.5.17
       '@vue/shared': 3.5.17
 
+  '@vue/compiler-vue2@2.7.16':
+    dependencies:
+      de-indent: 1.0.2
+      he: 1.2.0
+
   '@vue/devtools-api@7.7.7':
     dependencies:
       '@vue/devtools-kit': 7.7.7
@@ -1646,6 +1743,19 @@ snapshots:
     dependencies:
       rfdc: 1.4.1
 
+  '@vue/language-core@3.0.5(typescript@5.9.2)':
+    dependencies:
+      '@volar/language-core': 2.4.22
+      '@vue/compiler-dom': 3.5.17
+      '@vue/compiler-vue2': 2.7.16
+      '@vue/shared': 3.5.17
+      alien-signals: 2.0.6
+      muggle-string: 0.4.1
+      path-browserify: 1.0.1
+      picomatch: 4.0.2
+    optionalDependencies:
+      typescript: 5.9.2
+
   '@vue/reactivity@3.5.17':
     dependencies:
       '@vue/shared': 3.5.17
@@ -1662,17 +1772,20 @@ snapshots:
       '@vue/shared': 3.5.17
       csstype: 3.1.3
 
-  '@vue/server-renderer@3.5.17(vue@3.5.17)':
+  '@vue/server-renderer@3.5.17(vue@3.5.17(typescript@5.9.2))':
     dependencies:
       '@vue/compiler-ssr': 3.5.17
       '@vue/shared': 3.5.17
-      vue: 3.5.17
+      vue: 3.5.17(typescript@5.9.2)
 
   '@vue/shared@3.5.17': {}
 
-  '@vue/tsconfig@0.7.0(vue@3.5.17)':
+  '@vue/tsconfig@0.7.0(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2))':
     optionalDependencies:
-      vue: 3.5.17
+      typescript: 5.9.2
+      vue: 3.5.17(typescript@5.9.2)
+
+  alien-signals@2.0.6: {}
 
   ansi-regex@5.0.1: {}
 
@@ -1769,6 +1882,8 @@ snapshots:
   cssesc@3.0.0: {}
 
   csstype@3.1.3: {}
+
+  de-indent@1.0.2: {}
 
   detect-libc@1.0.3:
     optional: true
@@ -1874,6 +1989,8 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
+  he@1.2.0: {}
+
   hookable@5.5.3: {}
 
   immutable@5.1.3: {}
@@ -1938,6 +2055,8 @@ snapshots:
 
   mitt@3.0.1: {}
 
+  muggle-string@0.4.1: {}
+
   mz@2.7.0:
     dependencies:
       any-promise: 1.3.0
@@ -1961,6 +2080,8 @@ snapshots:
 
   package-json-from-dist@1.0.1: {}
 
+  path-browserify@1.0.1: {}
+
   path-key@3.1.1: {}
 
   path-parse@1.0.7: {}
@@ -1980,10 +2101,12 @@ snapshots:
 
   pify@2.3.0: {}
 
-  pinia@3.0.3(vue@3.5.17):
+  pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)):
     dependencies:
       '@vue/devtools-api': 7.7.7
-      vue: 3.5.17
+      vue: 3.5.17(typescript@5.9.2)
+    optionalDependencies:
+      typescript: 5.9.2
 
   pirates@4.0.6: {}
 
@@ -2178,6 +2301,8 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
+  typescript@5.9.2: {}
+
   update-browserslist-db@1.1.3(browserslist@4.24.4):
     dependencies:
       browserslist: 4.24.4
@@ -2200,13 +2325,23 @@ snapshots:
       sass: 1.89.2
       yaml: 2.8.0
 
-  vue@3.5.17:
+  vscode-uri@3.1.0: {}
+
+  vue-tsc@3.0.5(typescript@5.9.2):
+    dependencies:
+      '@volar/typescript': 2.4.22
+      '@vue/language-core': 3.0.5(typescript@5.9.2)
+      typescript: 5.9.2
+
+  vue@3.5.17(typescript@5.9.2):
     dependencies:
       '@vue/compiler-dom': 3.5.17
       '@vue/compiler-sfc': 3.5.17
       '@vue/runtime-dom': 3.5.17
-      '@vue/server-renderer': 3.5.17(vue@3.5.17)
+      '@vue/server-renderer': 3.5.17(vue@3.5.17(typescript@5.9.2))
       '@vue/shared': 3.5.17
+    optionalDependencies:
+      typescript: 5.9.2
 
   which@2.0.2:
     dependencies:

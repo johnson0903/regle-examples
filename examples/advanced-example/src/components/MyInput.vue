@@ -7,7 +7,7 @@
       v-model="modelValue"
       :type
       :class="{
-        'border-green-500': field?.$valid,
+        'border-green-500': field?.$correct,
         'border-red-400': field?.$error,
         'border-orange-300': field?.$pending,
       }"

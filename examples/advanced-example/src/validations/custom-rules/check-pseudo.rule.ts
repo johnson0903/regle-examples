@@ -15,8 +15,8 @@ export const checkPseudo = createRule({
     return true;
   },
   message: 'The pseudo is already taken',
-  tooltip({ $value, $error }) {
-    if (!$error && !$value) {
+  tooltip({ $error }) {
+    if ($error) {
       return `Your pseudo can't be "regle"`;
     }
     return '';
