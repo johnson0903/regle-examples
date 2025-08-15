@@ -4,15 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-catalogs:
-  default:
-    '@regle/core':
-      specifier: 1.7.0
-      version: 1.7.0
-    '@regle/rules':
-      specifier: 1.7.0
-      version: 1.7.0
-
 importers:
 
   .: {}
@@ -20,10 +11,10 @@ importers:
   examples/advanced-example:
     dependencies:
       '@regle/core':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       check-password-strength:
         specifier: 3.0.0
@@ -66,10 +57,10 @@ importers:
   examples/collections-example:
     dependencies:
       '@regle/core':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       vue:
         specifier: 3.5.17
@@ -103,10 +94,10 @@ importers:
   examples/conditional-rules-example:
     dependencies:
       '@regle/core':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       vue:
         specifier: 3.5.17
@@ -140,10 +131,10 @@ importers:
   examples/custom-rules-example:
     dependencies:
       '@regle/core':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       vue:
         specifier: 3.5.17
@@ -177,10 +168,10 @@ importers:
   examples/required-indicators-example:
     dependencies:
       '@regle/core':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       vue:
         specifier: 3.5.17
@@ -214,10 +205,10 @@ importers:
   examples/server-validation-example:
     dependencies:
       '@regle/core':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       vue:
         specifier: 3.5.17
@@ -251,10 +242,10 @@ importers:
   examples/simple-example:
     dependencies:
       '@regle/core':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       '@regle/rules':
-        specifier: 'catalog:'
+        specifier: 1.7.0
         version: 1.7.0(pinia@3.0.3(typescript@5.9.2)(vue@3.5.17(typescript@5.9.2)))(vue@3.5.17(typescript@5.9.2))
       vue:
         specifier: 3.5.17

@@ -6,9 +6,3 @@ packages:
   - examples/custom-rules-example
   - examples/required-indicators-example
   - examples/server-validation-example
-
-
-catalog:
-  "@regle/core": 1.7.0
-  "@regle/rules": 1.7.0
-  "@regle/nuxt": 1.7.0
