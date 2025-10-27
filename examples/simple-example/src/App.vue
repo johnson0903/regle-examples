@@ -3,7 +3,7 @@ import { useRegle } from '@regle/core';
 import { and, checked, dateBefore, email, minLength, required, withMessage } from '@regle/rules';
 import FieldError from './components/FieldError.vue';
 import { NDatePicker, NTimePicker } from 'naive-ui'
-import { ref } from 'vue' 
+import { ref } from 'vue'
 import { DateTime } from 'luxon'
 
 interface Form {
@@ -30,6 +30,10 @@ const { r$ } = useRegle({} as Form, {
   },
   time: {
     required,
+    checkDate: withMessage(
+      checkDate,
+      `date should before ${targetDateTime.value}`
+    )
   }
 }, {
   validationGroups: (fields) => ({
@@ -52,23 +56,24 @@ async function submit() {
     <div class="mx-auto max-w-xl divide-y py-12 md:max-w-4xl">
       <div class="py-12 flex flex-col justify-center items-center">
         <h2 class="text-2xl font-bold">Simple Regle</h2>
-        <pre>{{ r$.$groups.myDateTime}}</pre>
+        <pre>{{ r$.$groups.myDateTime }}</pre>
 
         <div class="mt-8 w-96 max-w-md">
           <div class="grid grid-cols-1 gap-6">
             <div class="flex">
               <label class="block">
                 <n-date-picker v-model:formatted-value="r$.$value.date" value-format="yyyy-MM-dd"
-                  type="date" clearable />
+                  :status="r$.$groups.myDateTime.$error ? 'error' : undefined" type="date" clearable />
                 <FieldError :errors="r$.date.$errors" />
               </label>
               <label class="block">
-                <n-time-picker v-model:formatted-value="r$.$value.time" value-format="HH:mm:ss" clearable />
+                <n-time-picker v-model:formatted-value="r$.$value.time" value-format="HH:mm:ss" clearable :status="r$.$groups.myDateTime.$error ? 'error' : undefined" />
               </label>
             </div>
 
             <h2>Target Date:</h2>
-            <n-date-picker v-model:formatted-value="targetDateTime" value-format="yyyy-MM-dd HH:mm:ss" />
+            <n-date-picker v-model:formatted-value="targetDateTime" value-format="yyyy-MM-dd HH:mm:ss"
+              />
 
             <div class="flex justify-between">
               <button
