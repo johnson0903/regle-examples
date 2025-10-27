@@ -37,10 +37,6 @@ const { r$ } = useRegle(form, {
   time: {
     required,
   }
-}, {
-  validationGroups: (fields) => ({
-    myDateTime: [fields.date, fields.time]
-  })
 });
 
 async function submit() {
@@ -58,18 +54,18 @@ async function submit() {
     <div class="mx-auto max-w-xl divide-y py-12 md:max-w-4xl">
       <div class="py-12 flex flex-col justify-center items-center">
         <h2 class="text-2xl font-bold">Simple Regle</h2>
-        <pre>{{ r$.$groups.myDateTime }}</pre>
+        <pre>{{ r$.date.$errors }}</pre>
 
         <div class="mt-8 w-96 max-w-md">
           <div class="grid grid-cols-1 gap-6">
             <div class="flex">
               <label class="block">
                 <n-date-picker v-model:formatted-value="r$.$value.date" value-format="yyyy-MM-dd"
-                  :status="r$.$groups.myDateTime.$error ? 'error' : undefined" type="date" clearable />
+                  :status="r$.date.$error ? 'error' : undefined" type="date" clearable />
                 <FieldError :errors="r$.date.$errors" />
               </label>
               <label class="block">
-                <n-time-picker v-model:formatted-value="r$.$value.time" value-format="HH:mm:ss" clearable :status="r$.$groups.myDateTime.$error ? 'error' : undefined" />
+                <n-time-picker v-model:formatted-value="r$.$value.time" value-format="HH:mm:ss" clearable :status="r$.date.$error ? 'error' : undefined" />
               </label>
             </div>
 
