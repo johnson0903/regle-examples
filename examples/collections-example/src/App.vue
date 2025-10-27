@@ -1,5 +1,6 @@
 <template>
   <div class="h-screen bg-white dark:bg-[#191a19] text-gray-900 dark:text-gray-200 p-6">
+    <div>{{ r$.$errors}}</div>
     <form @submit.prevent="submit" class="max-w-2xl mx-auto">
       <div class="flex flex-col gap-4">
         <!-- Full Name -->
@@ -62,7 +63,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import FieldError from './components/FieldError.vue';
-import { minValue, minLength, required } from '@regle/rules';
+import { minValue, minLength, required, maxLength } from '@regle/rules';
 import { inferRules, useRegle, type RegleComputedRules } from '@regle/core';
 
 const isFormValid = ref(false);
@@ -82,6 +83,7 @@ const rules = computed(() => {
       minLength: minLength(10),
     },
     children: {
+      minLength: minLength(3),
       $each: {
         fullName: {
           required,

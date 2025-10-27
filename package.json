@@ -5,5 +5,8 @@
   "type": "module",
   "scripts": {
     "typecheck": "pnpm run -r --filter=* typecheck "
+  },
+  "engines": {
+    "pnpm": ">=8.7.0"
   }
 }
