@@ -2,38 +2,39 @@
 import { useRegle } from '@regle/core';
 import { and, checked, dateBefore, email, minLength, required, withMessage } from '@regle/rules';
 import FieldError from './components/FieldError.vue';
-import { withTooltip } from '@regle/rules';
+import { NDatePicker, NTimePicker } from 'naive-ui'
+import { ref } from 'vue' 
+import { DateTime } from 'luxon'
 
 interface Form {
-  fullName?: string;
-  email?: string;
-  eventDate?: Date;
-  eventType?: string;
-  details?: string;
-  acceptTC?: boolean;
+  date: string,
+  time: string
+}
+
+const targetDateTime = ref('2025-10-27 12:00:00')
+
+function checkDate() {
+  const groupedDate = DateTime.fromFormat(`${r$.$value.date} ${r$.$value.time}`, 'yyyy-MM-dd HH:mm:ss')
+  const targetDate = DateTime.fromFormat(targetDateTime.value, 'yyyy-MM-dd HH:mm:ss')
+
+  return groupedDate < targetDate
 }
 
 const { r$ } = useRegle({} as Form, {
-  fullName: { required, minLength: minLength(6) },
-  email: { required, email },
-  eventDate: {
+  date: {
     required,
-    dateBefore: withTooltip(dateBefore(new Date()), ({ $dirty }) => {
-      if (!$dirty) return 'You must put a date before today';
-      return '';
-    }),
+    checkDate: withMessage(
+      checkDate,
+      `date should before ${targetDateTime.value}`
+    )
   },
-  eventType: { required },
-  details: {
-    minLength: withMessage(
-      minLength(100),
-      ({ $value, $params: [min] }) => `Your details are too short: ${$value?.length}/${min}`
-    ),
-  },
-  acceptTC: {
-    $rewardEarly: true,
-    required: withMessage(and(required, checked), 'You must accept the terms and conditions'),
-  },
+  time: {
+    required,
+  }
+}, {
+  validationGroups: (fields) => ({
+    myDateTime: [fields.date, fields.time]
+  })
 });
 
 async function submit() {
@@ -51,89 +52,32 @@ async function submit() {
     <div class="mx-auto max-w-xl divide-y py-12 md:max-w-4xl">
       <div class="py-12 flex flex-col justify-center items-center">
         <h2 class="text-2xl font-bold">Simple Regle</h2>
+        <pre>{{ r$.$groups.myDateTime}}</pre>
+
         <div class="mt-8 w-96 max-w-md">
           <div class="grid grid-cols-1 gap-6">
-            <label class="block">
-              <span class="text-gray-700">Full name</span>
-              <input
-                v-model="r$.$value.fullName"
-                type="text"
-                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                placeholder="John Dupond"
-              />
-              <FieldError :errors="r$.fullName.$errors" />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">Email address</span>
-              <input
-                v-model="r$.$value.email"
-                type="email"
-                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                placeholder="john@example.com"
-              />
-              <FieldError :errors="r$.email.$errors" />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">When is your event?</span>
-              <input
-                v-model="r$.$value.eventDate"
-                type="date"
-                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-              />
-              <FieldError :errors="r$.eventDate.$errors" />
-              <ul class="text-sm text-gray-400 mt-1" v-if="r$.eventDate.$tooltips.length">
-                <li v-for="tooltip of r$.eventDate.$tooltips" :key="tooltip">{{ tooltip }}</li>
-              </ul>
-            </label>
-            <label class="block">
-              <span class="text-gray-700">What type of event is it?</span>
-              <select
-                v-model="r$.$value.eventType"
-                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-              >
-                <option disabled value="undefined" selected>Select an event</option>
-                <option value="Corporate">Corporate event</option>
-                <option value="Wedding">Wedding</option>
-                <option value="Borthday">Birthday</option>
-                <option value="Other">Other</option>
-              </select>
-              <FieldError :errors="r$.eventType.$errors" />
-            </label>
-            <label class="block">
-              <span class="text-gray-700">Additional details</span>
-              <textarea
-                v-model="r$.$value.details"
-                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                rows="3"
-              ></textarea>
-              <FieldError :errors="r$.details.$errors" />
-            </label>
-            <div class="block">
-              <div class="mt-2">
-                <div>
-                  <label class="inline-flex items-center">
-                    <input
-                      v-model="r$.$value.acceptTC"
-                      type="checkbox"
-                      class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 focus:ring-offset-0"
-                    />
-                    <span class="ml-2">I accept terms and conditions</span>
-                  </label>
-                  <FieldError :errors="r$.acceptTC.$errors" />
-                </div>
-              </div>
+            <div class="flex">
+              <label class="block">
+                <n-date-picker v-model:formatted-value="r$.$value.date" value-format="yyyy-MM-dd"
+                  type="date" clearable />
+                <FieldError :errors="r$.date.$errors" />
+              </label>
+              <label class="block">
+                <n-time-picker v-model:formatted-value="r$.$value.time" value-format="HH:mm:ss" clearable />
+              </label>
             </div>
+
+            <h2>Target Date:</h2>
+            <n-date-picker v-model:formatted-value="targetDateTime" value-format="yyyy-MM-dd HH:mm:ss" />
+
             <div class="flex justify-between">
               <button
                 class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-                @click="r$.$reset({ toInitialState: true })"
-              >
+                @click="r$.$reset({ toInitialState: true })">
                 Reset
               </button>
-              <button
-                class="bg-indigo-500 text-white hover:bg-indigo-600 font-semibold py-2 px-4 rounded shadow"
-                @click="submit"
-              >
+              <button class="bg-indigo-500 text-white hover:bg-indigo-600 font-semibold py-2 px-4 rounded shadow"
+                @click="submit">
                 Submit
               </button>
             </div>

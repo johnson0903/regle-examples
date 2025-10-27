@@ -12,11 +12,14 @@
   "dependencies": {
     "@regle/core": "1.8.5",
     "@regle/rules": "1.8.5",
+    "luxon": "^3.7.2",
+    "naive-ui": "^2.43.1",
     "vue": "3.5.17",
     "vue-tsc": "3.0.5"
   },
   "devDependencies": {
     "@tailwindcss/forms": "0.5.10",
+    "@types/luxon": "^3.7.1",
     "@vitejs/plugin-vue": "^6.0.0",
     "@vue/tsconfig": "^0.7.0",
     "autoprefixer": "^10.4.21",
