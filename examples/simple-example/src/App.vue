@@ -1,39 +1,41 @@
 <script setup lang="ts">
-import { useRegle } from '@regle/core';
-import { and, checked, dateBefore, email, minLength, required, withMessage } from '@regle/rules';
+import { createRule, useRegle, type Maybe } from '@regle/core';
+import { and, checked, dateBefore, email,isFilled, minLength, required, withMessage } from '@regle/rules';
 import FieldError from './components/FieldError.vue';
 import { NDatePicker, NTimePicker } from 'naive-ui'
 import { ref } from 'vue'
 import { DateTime } from 'luxon'
 
 interface Form {
-  date: string,
-  time: string
+  date?: string,
+  time?: string
 }
 
 const targetDateTime = ref('2025-10-27 12:00:00')
 
-function checkDate() {
-  const groupedDate = DateTime.fromFormat(`${r$.$value.date} ${r$.$value.time}`, 'yyyy-MM-dd HH:mm:ss')
-  const targetDate = DateTime.fromFormat(targetDateTime.value, 'yyyy-MM-dd HH:mm:ss')
+const checkDate = createRule({
+  validator(value: Maybe<string>, time: Maybe<string>) {
+    if (isFilled(value)) {
+      const groupedDate = DateTime.fromFormat(`${value} ${time}`, 'yyyy-MM-dd HH:mm:ss')
+      const targetDate = DateTime.fromFormat(targetDateTime.value, 'yyyy-MM-dd HH:mm:ss')
 
-  return groupedDate < targetDate
-}
+      return groupedDate < targetDate
+    }
+    return true;
+  },
+  message: `date should before ${targetDateTime.value}`
+})
 
-const { r$ } = useRegle({} as Form, {
+const form = ref<Form>({})
+
+
+const { r$ } = useRegle(form, {
   date: {
     required,
-    checkDate: withMessage(
-      checkDate,
-      `date should before ${targetDateTime.value}`
-    )
+    checkDate: checkDate(() => form.value.time)
   },
   time: {
     required,
-    checkDate: withMessage(
-      checkDate,
-      `date should before ${targetDateTime.value}`
-    )
   }
 }, {
   validationGroups: (fields) => ({
