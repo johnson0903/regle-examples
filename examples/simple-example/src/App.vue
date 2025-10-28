@@ -26,7 +26,9 @@ const checkDate = createRule({
   message: `date should before ${targetDateTime.value}`
 })
 
-const form = ref<Form>({})
+const form = ref<Form>({
+  date: '2025-10-27'
+})
 
 
 const { r$ } = useRegle(form, {
